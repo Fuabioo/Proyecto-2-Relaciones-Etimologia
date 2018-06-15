@@ -1,0 +1,256 @@
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 5
+zanahorias 5
+   tablero _generated_inputs_/25x25(50).txt
+     steps 33
+  duration 0.17663979530334473
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 5
+zanahorias 10
+   tablero _generated_inputs_/25x25(50).txt
+     steps 66
+  duration 0.381361722946167
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 5
+zanahorias 15
+   tablero _generated_inputs_/25x25(50).txt
+     steps 71
+  duration 0.3088231086730957
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 5
+zanahorias 20
+   tablero _generated_inputs_/25x25(50).txt
+     steps 98
+  duration 0.4737586975097656
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 10
+zanahorias 5
+   tablero _generated_inputs_/25x25(50).txt
+     steps 23
+  duration 0.22108936309814453
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 10
+zanahorias 10
+   tablero _generated_inputs_/25x25(50).txt
+     steps 37
+  duration 0.36046528816223145
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 10
+zanahorias 15
+   tablero _generated_inputs_/25x25(50).txt
+     steps 53
+  duration 0.6232073307037354
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 10
+zanahorias 20
+   tablero _generated_inputs_/25x25(50).txt
+     steps 62
+  duration 0.7077805995941162
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 15
+zanahorias 5
+   tablero _generated_inputs_/25x25(50).txt
+     steps 23
+  duration 0.6347534656524658
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 15
+zanahorias 10
+   tablero _generated_inputs_/25x25(50).txt
+     steps 37
+  duration 1.250868320465088
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 15
+zanahorias 15
+   tablero _generated_inputs_/25x25(50).txt
+     steps 53
+  duration 2.394057035446167
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 15
+zanahorias 20
+   tablero _generated_inputs_/25x25(50).txt
+     steps 62
+  duration 2.8457536697387695
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 20
+zanahorias 5
+   tablero _generated_inputs_/25x25(50).txt
+     steps 23
+  duration 1.8139338493347168
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 20
+zanahorias 10
+   tablero _generated_inputs_/25x25(50).txt
+     steps 37
+  duration 3.60324764251709
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 20
+zanahorias 15
+   tablero _generated_inputs_/25x25(50).txt
+     steps 53
+  duration 6.9130964279174805
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(50).txt -----------
+    vision 20
+zanahorias 20
+   tablero _generated_inputs_/25x25(50).txt
+     steps 62
+  duration 8.147149801254272
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 5
+zanahorias 5
+   tablero _generated_inputs_/25x25(100).txt
+     steps 14
+  duration 0.1115567684173584
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 5
+zanahorias 10
+   tablero _generated_inputs_/25x25(100).txt
+     steps 22
+  duration 0.1296064853668213
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 5
+zanahorias 15
+   tablero _generated_inputs_/25x25(100).txt
+     steps 34
+  duration 0.18972134590148926
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 5
+zanahorias 20
+   tablero _generated_inputs_/25x25(100).txt
+     steps 46
+  duration 0.24832558631896973
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 10
+zanahorias 5
+   tablero _generated_inputs_/25x25(100).txt
+     steps 14
+  duration 0.1426703929901123
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 10
+zanahorias 10
+   tablero _generated_inputs_/25x25(100).txt
+     steps 22
+  duration 0.23915338516235352
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 10
+zanahorias 15
+   tablero _generated_inputs_/25x25(100).txt
+     steps 34
+  duration 0.34792494773864746
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 10
+zanahorias 20
+   tablero _generated_inputs_/25x25(100).txt
+     steps 46
+  duration 0.45984888076782227
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 15
+zanahorias 5
+   tablero _generated_inputs_/25x25(100).txt
+     steps 14
+  duration 0.35835886001586914
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 15
+zanahorias 10
+   tablero _generated_inputs_/25x25(100).txt
+     steps 22
+  duration 0.7370574474334717
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 15
+zanahorias 15
+   tablero _generated_inputs_/25x25(100).txt
+     steps 34
+  duration 1.1482114791870117
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 15
+zanahorias 20
+   tablero _generated_inputs_/25x25(100).txt
+     steps 46
+  duration 1.454122543334961
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 20
+zanahorias 5
+   tablero _generated_inputs_/25x25(100).txt
+     steps 14
+  duration 0.9180269241333008
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 20
+zanahorias 10
+   tablero _generated_inputs_/25x25(100).txt
+     steps 22
+  duration 2.0346248149871826
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 20
+zanahorias 15
+   tablero _generated_inputs_/25x25(100).txt
+     steps 34
+  duration 2.9653570652008057
+    result Conejo satisfecho!  |  
+
+---------- _generated_inputs_/25x25(100).txt -----------
+    vision 20
+zanahorias 20
+   tablero _generated_inputs_/25x25(100).txt
+     steps 46
+  duration 3.8579018115997314
+    result Conejo satisfecho!  |  
