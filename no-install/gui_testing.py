@@ -4,7 +4,6 @@ GUI Test Module
 
 from controller import Controller
 
-
 def main():
     """Creates and runs the gui"""
     controller = Controller()  # debug=True)

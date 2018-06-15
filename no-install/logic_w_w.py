@@ -60,7 +60,7 @@ def fillComplexRules(parent_child, child_parent, relations):
 
 
     
-    return
+    
 
     #Child
     for relation in parent_child:
@@ -121,7 +121,7 @@ def fillComplexRules(parent_child, child_parent, relations):
                 rules += 'primos2(A,Ai,B,Bi,G) <= ('+relation+'(A,Ai,Papa,Papai) & primos2(Papa,Papai,B,Bi,F)) & (G==F+1)\n'
 
     pyDatalog.load(rules)
-
+    return
 
 
 def createQuery(word1, I1, word2, I2, queryType, relations):
