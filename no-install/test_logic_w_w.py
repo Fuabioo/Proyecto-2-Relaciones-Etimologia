@@ -377,5 +377,5 @@ class TestLogicWW(object):
             Dummy(),
             model_test.get_logic(),  # data
             relations)
-        expected_result = False
+        expected_result = True
         assert result == expected_result

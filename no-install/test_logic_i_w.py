@@ -3,7 +3,7 @@ Pytest for Logic Idiom-Word Module
 """
 
 from model import Model
-import logic_w_w
+import logic_i_w
 
 
 class Dummy:
@@ -20,8 +20,8 @@ class Dummy:
 class TestLogicIW(object):
     """ Test object validation for the logic"""
 
-    def test_cousin_3(self):
-        """Test Case: hijo is cousin of primo? -> Yes"""
+    def test_related_1(self):
+        """Test Case: hijo is related to primo? -> Yes"""
         model_test = Model()
         data_pool = [
             '+ etymological_origin_of(" abuelo",spa," padre",spa)',
@@ -39,7 +39,7 @@ class TestLogicIW(object):
             'etymological_origin_of': True,
             'is_derived_from': False,
             'variant': False}
-        result = logic_w_w.cousin(
+        result = logic_i_w.related(
             "hijo",
             "spa",
             "primo",

@@ -62,18 +62,10 @@ class TestQuery(object):
             'cousin_level': '',
             'error': ''}
 
-        expected_functions = {
-            'brother': '',
-            'child': '',
-            'cousin': '',
-            'cousin_level': '',
-            'createQuery': '',
-            'executeQuery': '',
-            'fillComplexRules': '',
-            'uncle': ''}
+        expected_functions = 9
 
         _, functions, _ = get_commands(inputs, logic_w_w)
-        assert len(expected_functions) == len(functions)
+        assert expected_functions == len(functions)
 
     def test_command_stack_w_w_3(self):
         """Tests if the Command Stack is created correctly
@@ -228,7 +220,7 @@ class TestQuery(object):
             'error': ''}
 
         _, functions, _ = get_commands(inputs, logic_i_i)
-        assert 8 == len(functions)
+        assert 9 == len(functions)
 
     def test_command_stack_i_i_3(self):
         """Tests if the Command Stack is created correctly
