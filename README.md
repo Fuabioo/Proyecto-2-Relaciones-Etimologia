@@ -3,6 +3,59 @@
 
 # Proyecto-2-Relaciones-Etimologia
 
+Manual de usuario
+===
+El sistema de relaciones de etimología posee una interfaz gráfica ideada para hacer las consultas con la menor cantidad de acciones posibles, esto con la finalidad de acelerar el proceso de uso.
+![Interfaz](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_1.png "Interfaz")
+- A la izquierda se encuentra la **consola**. En ella se muestran los datos relevantes a las consultas realizadas, y mensajes de error al ejecutar consultas.
+- Bajo **"Select Relations"** se encuentran todas las relaciones presentes en la base de datos con las cuales se puede hacer consultas. Debe seleccionar una o varias para poder realizar una consulta. Si una de las relaciones no existe en la base de datos para el contexto específico que se solicita (si no existe esa relación para los idiomas seleccionados), en la consola se mostrará el mensaje de error.
+- El botón de **"Search"** (Color verde) se encarga de realizar la consulta con los datos suministrados por el usuario. Sobre este botón se encuentra un texto que indica cuál tipo de consulta se tiene seleccionada. 
+- El botón **"Clear Console"** (Color amarillo) borra el contenido de la consola.
+- El botón **"Clear Form"** (Color rojo) borra el contenido de las casillas de idiomas y palabras; así como los resultados mostrados bajo dichas casillas.
+- Bajo **"Select Query Form"** se encuentran los tipos de consulta disponibles. Word-Word para hacer consultas entre 2 palabras específicas; Idiom-Word para hacer consultas entre un idioma y una palabra específica e Idiom-Idiom para hacer consultas entre 2 idiomas específicos (o 1 solo idioma). Al hacer click en cualquiera de estos botones, en la parte derecha se despliega los campos para llenar los idiomas y las palabras.
+
+Al seleccionar Word-Word se despliega el siguiente contenido:
+![Word-Word](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_WW.png "Word-Word")
+
+- **Idiom#1**, **Word#1**, **Idiom#2**, **Word#2** reciben el idioma#1, palabra#1, idioma#2 y palabra#2 respectivamente.
+
+Una vez rellenados los campos solicitados, puede hacer click sobre uno o varios de los siguientes botones para realizar las consultas deseadas:
+
+- **Brothers?** Si la palabra#1 del idioma#1 es hermana de la palabra#2 del idioma#2. Muestra "True" o "False" en el campo anexo.
+- **Child?** Si la palabra#1 del idioma#1 es hija de la palabra#2 del idioma#2. Muestra "True" o "False" en el campo anexo.
+- **Uncle?** Si la palabra#1 del idioma#1 es tía de la palabra#2 del idioma#2. Muestra "True" o "False" en el campo anexo.
+- **Cousins?** Si la palabra#1 del idioma#1 y la palabra#2 del idioma#2 son primas (de primer grado). Muestra "True" o "False" en el campo anexo.
+- **Cousin_Level** Si la palabra#1 del idioma#1 y la palabra#2 del idioma#2 son primas (de cualquier grado). Muestra "True" o "False" en el campo anexo. Muestra el grado en la consola con el formato `{(grado,)}`
+
+Al seleccionar Idiom-Word se despliega el siguiente contenido:
+![Idiom-Word](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_IW.png "Idiom-Word")
+
+- **Idiom**, **Word's Idiom**, **Word** reciben el idioma a comparar, el idioma de la palabra a comparar y la palabra a comparar respectivamente.
+
+Una vez rellenados los campos solicitados, puede hacer click sobre uno o varios de los siguientes botones para realizar las consultas deseadas:
+
+- **Related?** Si la palabra "Word" del idioma "Word's Idiom" es hija o padre de alguna palabra del idioma "Idiom". Muestra "True" o "False" en el campo anexo. Muestra las palabras relacionadas en la consola (No todas, dada la naturaleza de la búsqueda, solo muestra los padres en caso de tenerlos).
+- **Originated** Las palabras del idioma "Idiom" que son hijas de la palabra "Word" del idioma "Word's Idiom"". Muestra "True" o "False" en el campo anexo. Muestra las palabras originadas en la consola.
+- **List related** Los idiomas que tienen padres o hijos de la palabra "Word" del idioma "Words's Idiom". Muestra "True" o "False" en el campo anexo. Muestra los idiomas de las palabras relacionadas en la consola.
+
+Al seleccionar Idiom-Idiom se despliega el siguiente contenido:
+![Idiom-Idiom](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_IW.png "Idiom-Idiom")
+
+- **Idiom#1** e **Idiom#2** reciben el idioma#1 y el idioma#2 respectivamente.
+
+Una vez rellenados los campos solicitados, puede hacer click sobre uno o varios de los siguientes botones para realizar las consultas deseadas:
+
+- **Common amount** La cantidad de palabras en común que tienen ambos idiomas. Muestra el resultado en la consola con la forma `{(cantidad_en_común,)}`
+- **Common** Todas las palabras en común que tienen ambos idiomas. Muestra el resultado en la consola con la forma `{(palabra1,), (palabra2,), (palabra3,), ...}`
+- **Contributed most** El idioma que más contribuyó (Padre->Hijo) al idioma#1. Muestra el resultado en la consola con la forma  `Idiom: idioma', Percentage: porcentaje`
+- **Idiom list** Todos los idiomas que contribuyeron (Padre->Hijo) al idioma#1. Muestra el resultado en la consola con la forma  
+	```
+		idioma1:porcentaje1
+		idioma2:porcentaje2
+		idioma3:porcentaje3
+		...
+	```
+
 
 Decisiones de diseño
 ===
