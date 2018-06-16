@@ -1,15 +1,13 @@
-etymwn.tsv
 __pycache__
 .pytest_cache/
 database/
 dist/
 tec.egg-info/
 build/lib/tec/
-*.tsv
-*.cl
 no-install/model - copia.py
 no-install/ALT_logic_w_w.py
-*.rar
 no-install/model_-_copia.py
 no-install/asd.py
-no-install/DB/disbich.py
+*.tsv
+*.cl
+*.rar
