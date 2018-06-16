@@ -1,5 +1,6 @@
 
 
+
 # Proyecto-2-Relaciones-Etimologia
 
 
@@ -89,7 +90,7 @@ Para el problema al que nos enfrentamos en la realización del proyecto, la *Kno
 Cada entrada de la *Knowledge Base* tiene la forma
 `relación(palabra1, idioma1, palabra2, idioma2)`
 
-Al hacer consultas lógicas sobre un pequeño porcentaje de la *Knowledge Base* nos dimos cuenta de lo costoso que es computacionalmente realizar este tipo de consultas. Previendo los tiempos de ejecución excesivos para la realización de consultas complejas (e incluso que requieren evaluar idiomas completos) el equipo de trabajo tomó la decisión de separar la *Knowledge Base* en pedazos más pequeños y manejables dinámicamente.
+Al hacer consultas lógicas sobre un pequeño porcentaje de la *Knowledge Base* nos dimos cuenta de lo costoso que es computacionalmente realizar este tipo de consultas. Previendo los tiempos de ejecución excesivos para la realización de consultas complejas (e incluso que requieren evaluar idiomas completos) el equipo de trabajo tomó la decisión de separar la *Knowledge Base* en pedazos más pequeños y manejables dinámicamente, esto como se menciono previamente, y por medio de un parser, se cambio la complejidad algoritmica de  <a href="https://www.codecogs.com/eqnedit.php?latex=$2^n$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$2^n$" title="$2^n$" /></a>, a <a href="https://www.codecogs.com/eqnedit.php?latex=$\sum&space;k_i^2$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\sum&space;k_i^2$" title="$\sum k_i^2$" /></a> con <a href="https://www.codecogs.com/eqnedit.php?latex=$\sum&space;k_i&space;=&space;n$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\sum&space;k_i&space;=&space;n$" title="$\sum k_i = n$" /></a>, lo cual en el caso de que se necesite cargar todas las relaciones de todos lo idiomas termina siendo igual a   <a href="https://www.codecogs.com/eqnedit.php?latex=$2^n$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$2^n$" title="$2^n$" /></a>, y es mejor en  cualquier otro caso, pero tambien habra un tiempo de carga por cada consulta, mientras se crea carga la porcion del database requerida a la aplicacion.
 
 De esta forma se clasifican las relaciones en archivos más pequeños con nombres descriptivos de la forma `idioma_relacion_idioma.cl`. Por ejemplo: **afr_etymologically_eng.cl**
 
@@ -109,9 +110,9 @@ La **generación** de todos estos archivos pequeños clasificados nos arrojó lo
 | is_derived_from| 2264744|- | 
 | variant:orthography|16516| -|
 
-Como se puede observar, `has_derived_form` e `is_derived_from` tienen la misma cantidad de relacionesm; al igual que `etymological_origin_of` e `etymology` , lo que indica que pueden tener las mismas relaciones pero a la inversa. Para comprobarlo se corrió un script que se aseguraba de que cada relación estuviera representada en su contraparte pero a la inversa. El script arrojó positivo, por lo cual se tomó la decisión de eliminar tanto `is_derived_from` como `etymology` para simplificar las búsquedas.
+Como se puede observar, `has_derived_form` e `is_derived_from` tienen la misma cantidad de relacionesm; al igual que `etymological_origin_of` e `etymology` , lo que indica que pueden tener las mismas relaciones pero a la inversa. Para comprobarlo se desarrollo un script que se aseguraba de que cada relación estuviera representada en su contraparte pero a la inversa. El script produjo un resultado positivo, por lo cual se tomó la decisión de eliminar tanto `is_derived_from` como `etymology` para simplificar las búsquedas.
 
-El archivo más pesado después de la generación  es "*lat_has_derived_form_lat.cl*" con un tamaño de 32,1 MB y 607.989 relaciones, por lo que el "peor escenario" es cuando el sistema tiene que buscar una relación *has_derived_form* de *lat* a *lat*.
+El archivo más pesado después de la generación  es "*lat_has_derived_form_lat.cl*" con un tamaño de 32,1 MB y 607.989 relaciones, por lo que el "peor escenario" es cuando el sistema tiene que buscar una relación *has_derived_form* de *lat* a *lat*, entre otras.
 
 Con respecto al **tiempo de carga** con esta tercera iteración de la base de datos **(.cl v3)**, debido a su naturaleza dinámica; el tiempo de carga se redujo inmensamente. 
 
@@ -122,7 +123,7 @@ Con respecto al **tiempo de carga** con esta tercera iteración de la base de da
 | **Total** | 62.00s | 20.19s | 7.94s | ---- |
 | **Total (Estimado) para 6.031.431** | ~6200s | ~2020s |~794s |  |
 
-Cabe destacar que una vez se realiza la carga para un tipo de relación usando el método **v3**, esta permanece en memoria, por lo que no es necesario cargar de nuevo.
+Cabe destacar que una vez se realiza la carga para un tipo de relación usando el método **v3**, esta permanece en memoria, por lo que no es necesario cargar de nuevo, pero se debe volver a crear knowledge base (automaticamente).
 
 Las consultas propiamente se ejecutan en un espacio reducido de la KB, que contiene únicamente lo necesario para satisfacer dichas consultas.
 
@@ -180,3 +181,16 @@ Adicionalmente, para hacer búsquedas en la base de datos es necesario formular 
 |igualesEntreIdiomas(I1,I2,X)|Idioma1, Idioma2, Resultado|Todas las palabras que se encuentra en el idioma 1 y a su vez en el idioma 2| 
 |Y==len( igualesEntreIdiomas(I1,I2,X))|Idioma1, Idioma2, Resultado|La cuenta de todas las palabras que se encuentra en el idioma 1 y a su vez en el idioma 2|
 |aporte(I1,I2,X)|Idioma1, Idioma2, Resultado|Todas las palabras de Idioma 1 cuyo padre se encuentra en idioma 2|
+
+Distribucion del Trabajo
+===
+| Tarea| Fabio| Sergio| Gabriel| 
+| - | - | - | - |
+| **Logica** | Si | Si | Si |
+| **Desarrollo de interfaz** | Si | No | No |
+| **Carga de archivos** | Si | Si | Si |
+| **Generacion de archivos** | No | Si | Si |
+| **Investigacion** | Si | Si | Si |
+| **Documentacion** | Si | Si | Si |
+| **Nota** | 100 | 100 | 100 |
+
