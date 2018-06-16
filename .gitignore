@@ -6,7 +6,6 @@ dist/
 tec.egg-info/
 build/lib/tec/
 *.tsv
-no-install/model.py
 *.cl
 no-install/model - copia.py
 no-install/ALT_logic_w_w.py
