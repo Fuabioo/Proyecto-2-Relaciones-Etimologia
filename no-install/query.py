@@ -59,15 +59,15 @@ def word_word(inputs: dict, relations: dict, console=None, data=None):
         inputs["word_2"],
         inputs["idiom_2"])
     parameters = (inputs, console, data, relations)
-    # try:
-    outputs = execute(
-    strings=strings,
-    parameters=parameters,
-    module=logic_w_w)
-    # except BaseException as exception:
-    #     outputs = {"error": "Predicate undefined."}
-    #     console.print(exception)
-    # Returns the dictionary with the outputs
+    try:
+        outputs = execute(
+        strings=strings,
+        parameters=parameters,
+        module=logic_w_w)
+    except BaseException as exception:
+        outputs = {"error": "Predicate undefined."}
+        console.print(exception)
+    #Returns the dictionary with the outputs
     return outputs
 
 
@@ -93,13 +93,13 @@ def idiom_idiom(inputs: dict, relations: dict, console=None, data=None):
     """Prepares parameters for the logic i i module"""
     strings = ('', '', inputs["idiom_1"], inputs["idiom_2"])
     parameters = (inputs, console, data, relations)
-    # try:
-    outputs = execute(
-        strings=strings,
-        parameters=parameters,
-        module=logic_i_i)
-    # except BaseException as exception:
-    #     outputs = {"error": "Predicate undefined."}
-    #     console.print(exception)
+    try:
+        outputs = execute(
+            strings=strings,
+            parameters=parameters,
+            module=logic_i_i)
+    except BaseException as exception:
+        outputs = {"error": "Predicate undefined."}
+        console.print(exception)
     # Returns the dictionary with the outputs
     return outputs
