@@ -44,7 +44,7 @@ Uso
 ---
 
 El sistema de relaciones de etimología posee una interfaz gráfica ideada para hacer las consultas con la menor cantidad de acciones posibles, esto con la finalidad de acelerar el proceso de uso.
-![Interfaz](https://github.com/Fuabioo/Proyecto-2-Relaciones-etimología/blob/master/addons/Manual_1.PNG "Interfaz")
+![Interfaz](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_1.PNG "Interfaz")
 - A la izquierda se encuentra la **consola**. En ella se muestran los datos relevantes a las consultas realizadas, y mensajes de error al ejecutar consultas.
 - Bajo **"Select Relations"** se encuentran todas las relaciones presentes en la base de datos con las cuales se puede hacer consultas. Debe seleccionar una o varias para poder realizar una consulta. Si una de las relaciones no existe en la base de datos para el contexto específico que se solicita (si no existe esa relación para los idiomas seleccionados), en la consola se mostrará el mensaje de error.
 - El botón de **"Search"** (Color verde) se encarga de realizar la consulta con los datos suministrados por el usuario. Sobre este botón se encuentra un texto que indica cuál tipo de consulta se tiene seleccionada. 
@@ -54,7 +54,7 @@ El sistema de relaciones de etimología posee una interfaz gráfica ideada para 
 
 Al seleccionar Word-Word se despliega el siguiente contenido:
 
-![Word-Word](https://github.com/Fuabioo/Proyecto-2-Relaciones-etimología/blob/master/addons/Manual_WW.PNG "Word-Word")  
+![Word-Word](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_WW.PNG "Word-Word")  
 
 - **Idiom#1**, **Word#1**, **Idiom#2**, **Word#2** reciben el idioma#1, palabra#1, idioma#2 y palabra#2 respectivamente.
 
@@ -68,7 +68,7 @@ Una vez rellenados los campos solicitados, puede hacer click sobre uno o varios 
 
 Al seleccionar Idiom-Word se despliega el siguiente contenido:
 
-![Idiom-Word](https://github.com/Fuabioo/Proyecto-2-Relaciones-etimología/blob/master/addons/Manual_IW.PNG "Idiom-Word")  
+![Idiom-Word](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_IW.PNG "Idiom-Word")  
 
 - **Idiom**, **Word's Idiom**, **Word** reciben el idioma a comparar, el idioma de la palabra a comparar y la palabra a comparar respectivamente.
 
@@ -80,7 +80,7 @@ Una vez rellenados los campos solicitados, puede hacer click sobre uno o varios 
 
 Al seleccionar Idiom-Idiom se despliega el siguiente contenido:
 
-![Idiom-Idiom](https://github.com/Fuabioo/Proyecto-2-Relaciones-etimología/blob/master/addons/Manual_II.PNG "Idiom-Idiom")  
+![Idiom-Idiom](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_II.PNG "Idiom-Idiom")  
 
 - **Idiom#1** e **Idiom#2** reciben el idioma#1 y el idioma#2 respectivamente.
 
@@ -105,7 +105,7 @@ Patrones
 ---
 Con el objetivo de tener una división clara entre los componentes del proyecto, se origino el siguiente modelo, basado en la implementación clásica de MVC:
 
-![Diagrama 1](https://github.com/Fuabioo/Proyecto-2-Relaciones-etimología/blob/master/addons/Diagram_1.png "Diagrama 1")  
+![Diagrama 1](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Diagram_1.png "Diagrama 1")  
 
 **Model**: Contiene toda la lógica (Modelos) correspondiente a los datos y su almacenamiento, es la coneccion con la base de datos etimológica. Ya que con la implementación hilos (Threads), se separan las lógicas, entonces se modelo multiplicidad para este aspecto de la implementación con el fin de que cada hilo maneje una pequeña parte de la base de datos, y así, convertir un modelo que tendría complejidad algoritmica de <a href="https://www.codecogs.com/eqnedit.php?latex=$2^n$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$2^n$" title="$2^n$" /></a>, a <a href="https://www.codecogs.com/eqnedit.php?latex=$\sum&space;k_i^2$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\sum&space;k_i^2$" title="$\sum k_i^2$" /></a> con <a href="https://www.codecogs.com/eqnedit.php?latex=$\sum&space;k_i&space;=&space;n$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\sum&space;k_i&space;=&space;n$" title="$\sum k_i = n$" /></a>, lo cual en el caso de que se necesite cargar todas las relaciones de todos lo idiomas termina siendo igual a   <a href="https://www.codecogs.com/eqnedit.php?latex=$2^n$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$2^n$" title="$2^n$" /></a>, y es mejor en  cualquier otro caso. 
 
