@@ -2,7 +2,10 @@
 pyDatalog Idiom-Idiom Logic
 """
 
+import logging
 from pyDatalog import pyDatalog
+from pyDatalog import pyEngine
+pyEngine.Logging = True
 
 
 

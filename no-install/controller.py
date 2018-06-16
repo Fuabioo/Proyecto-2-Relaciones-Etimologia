@@ -3,10 +3,11 @@ Controller Module
 """
 
 import tkinter
+import logging
 import threading
 from copy import deepcopy
 
-from view import View
+from view import View, TextHandler
 from model import Model, get_files
 from query import word_word, idiom_word, idiom_idiom
 
@@ -28,6 +29,11 @@ class Controller(object):
         self.logics = {}
         self.busy = False
         self.model = Model()
+
+        console_handler = TextHandler(self.view.console_panel)
+        logging.basicConfig(level=logging.INFO)
+        self.logger = logging.getLogger()
+        self.logger.addHandler(console_handler)
 
     def get_model(self, inputs, relations, work_relations):
         """Obtains the logic data from each relation's data,

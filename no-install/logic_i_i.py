@@ -2,7 +2,10 @@
 pyDatalog Idiom-Word Logic
 """
 
+import logging
 from pyDatalog import pyDatalog
+from pyDatalog import pyEngine
+pyEngine.Logging = True
 
 def formatResult(result):
     output = ""

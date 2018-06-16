@@ -2,6 +2,7 @@
 View Component of the application
 """
 
+import logging
 import types
 import tkinter
 
@@ -99,6 +100,21 @@ class MainPanel():
             widget.destroy()
         self.frame.pack_forget()
         self.items = {}
+
+
+class TextHandler(logging.Handler):
+    """This class allows you to log to tkinter"""
+
+    def __init__(self, console):
+        # run the regular Handler __init__
+        logging.Handler.__init__(self)
+        # Store a reference to the Text it will log to
+        self.console = console
+
+    def emit(self, record):
+        """Emits a messege to the console"""
+        msg = self.format(record)
+        self.console.print(msg)
 
 
 class ConsolePanel():
