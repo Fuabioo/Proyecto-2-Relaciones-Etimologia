@@ -5,6 +5,44 @@
 
 Manual de usuario
 ===
+
+Instalacion
+---
+
+Para instalar este proyecto simplemente se abre una consola en la carpeta raiz del proyecto y se ejecuta el siguiente comando:
+
+```batch
+python setup.py install
+```
+
+Para llamar al modulo instalado, hay un ejemplo en la carpeta *test* de este repositorio, esta contiene un archivo para ejecutar el proyecto con interfaz grafica y una carpeta con los archivos de datos, simulando el comportamiento en la vida real luego de instalar el paquete.
+La carpeta *database* es total y absolutamente necesaria para la ejecucion del proyecto ya que los modulos buscan la carpeta en el directorio desde donde se ejecuta el codigo.
+El archivo *gui_testing.py* contiene las siguientes lineas, que basicamente se explican por si solas:
+
+```python
+from tec.ic.ia.p2.g08_controller import Controller
+
+def main():
+    """Creates and runs the gui"""
+    controller = Controller()  # debug=True)
+    controller.run()
+
+if __name__ == '__main__':
+    main()
+```
+
+Basicamente se carga el controlador de la libreria y se corre. O, tambien existe la alternativa:
+
+```python
+from tec.ic.ia.p2.g08_gui_testing import main
+
+if __name__ == '__main__':
+    main()
+```
+
+Uso
+---
+
 El sistema de relaciones de etimología posee una interfaz gráfica ideada para hacer las consultas con la menor cantidad de acciones posibles, esto con la finalidad de acelerar el proceso de uso.
 ![Interfaz](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_1.PNG "Interfaz")
 - A la izquierda se encuentra la **consola**. En ella se muestran los datos relevantes a las consultas realizadas, y mensajes de error al ejecutar consultas.
