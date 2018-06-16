@@ -6,7 +6,7 @@
 Manual de usuario
 ===
 El sistema de relaciones de etimología posee una interfaz gráfica ideada para hacer las consultas con la menor cantidad de acciones posibles, esto con la finalidad de acelerar el proceso de uso.
-![Interfaz](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_1.png "Interfaz")
+![Interfaz](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_1.PNG "Interfaz")
 - A la izquierda se encuentra la **consola**. En ella se muestran los datos relevantes a las consultas realizadas, y mensajes de error al ejecutar consultas.
 - Bajo **"Select Relations"** se encuentran todas las relaciones presentes en la base de datos con las cuales se puede hacer consultas. Debe seleccionar una o varias para poder realizar una consulta. Si una de las relaciones no existe en la base de datos para el contexto específico que se solicita (si no existe esa relación para los idiomas seleccionados), en la consola se mostrará el mensaje de error.
 - El botón de **"Search"** (Color verde) se encarga de realizar la consulta con los datos suministrados por el usuario. Sobre este botón se encuentra un texto que indica cuál tipo de consulta se tiene seleccionada. 
