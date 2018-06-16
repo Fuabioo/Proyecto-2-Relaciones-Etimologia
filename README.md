@@ -15,7 +15,7 @@ El sistema de relaciones de etimología posee una interfaz gráfica ideada para 
 - Bajo **"Select Query Form"** se encuentran los tipos de consulta disponibles. Word-Word para hacer consultas entre 2 palabras específicas; Idiom-Word para hacer consultas entre un idioma y una palabra específica e Idiom-Idiom para hacer consultas entre 2 idiomas específicos (o 1 solo idioma). Al hacer click en cualquiera de estos botones, en la parte derecha se despliega los campos para llenar los idiomas y las palabras.
 
 Al seleccionar Word-Word se despliega el siguiente contenido:
-![Word-Word](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_WW.png "Word-Word")
+![Word-Word](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_WW.PNG "Word-Word")
 
 - **Idiom#1**, **Word#1**, **Idiom#2**, **Word#2** reciben el idioma#1, palabra#1, idioma#2 y palabra#2 respectivamente.
 
@@ -28,7 +28,7 @@ Una vez rellenados los campos solicitados, puede hacer click sobre uno o varios 
 - **Cousin_Level** Si la palabra#1 del idioma#1 y la palabra#2 del idioma#2 son primas (de cualquier grado). Muestra "True" o "False" en el campo anexo. Muestra el grado en la consola con el formato `{(grado,)}`
 
 Al seleccionar Idiom-Word se despliega el siguiente contenido:
-![Idiom-Word](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_IW.png "Idiom-Word")
+![Idiom-Word](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_IW.PNG "Idiom-Word")
 
 - **Idiom**, **Word's Idiom**, **Word** reciben el idioma a comparar, el idioma de la palabra a comparar y la palabra a comparar respectivamente.
 
@@ -39,7 +39,7 @@ Una vez rellenados los campos solicitados, puede hacer click sobre uno o varios 
 - **List related** Los idiomas que tienen padres o hijos de la palabra "Word" del idioma "Words's Idiom". Muestra "True" o "False" en el campo anexo. Muestra los idiomas de las palabras relacionadas en la consola.
 
 Al seleccionar Idiom-Idiom se despliega el siguiente contenido:
-![Idiom-Idiom](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_IW.png "Idiom-Idiom")
+![Idiom-Idiom](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Manual_II.PNG "Idiom-Idiom")
 
 - **Idiom#1** e **Idiom#2** reciben el idioma#1 y el idioma#2 respectivamente.
 
