@@ -14,7 +14,7 @@ def split_files(filename="etymwn.tsv"):
                 columns = line.lower().split("\t")
                 language_tag = columns[0].split(':')[0]
                 word_1 = '"'+ columns[0].split(':')[1].replace('"', "'").replace(' ','') + '"'
-                relation = columns[1].replace("rel:", '')
+                relation = columns[1].split(":")[1]
                 word_2_lang = columns[2].split(':')[0]
                 word_2 = '"' + columns[2].split(':')[1].replace("\n", "").replace('"', "'").replace(' ','') + '"'
 
