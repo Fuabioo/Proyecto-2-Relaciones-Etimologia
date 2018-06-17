@@ -276,6 +276,28 @@ Adicionalmente, para hacer búsquedas en la base de datos es necesario formular 
 |Y==len( igualesEntreIdiomas(I1,I2,X))|Idioma1, Idioma2, Resultado|La cuenta de todas las palabras que se encuentra en el idioma 1 y a su vez en el idioma 2|
 |aporte(I1,I2,X)|Idioma1, Idioma2, Resultado|Todas las palabras de Idioma 1 cuyo padre se encuentra en idioma 2|
 
+Resultados interesantes
+===
+Heman@s 
+-
+Se considera que atacar, del idioma español y taqueria, tambien en español, son hermanos bajo la regla has derived form, ya que tienen un padre comun que es taco
+
+Prim@s
+-
+Se considera que tacones, del idioma español y ataca, tambien en español, son primos bajo la regla has derived form, ya que tienen un abuelo comun que es taco
+
+Hij@s
+-
+Se considera que atacar, tacos, tacon, taqueria y taquito del idioma español son hijos de taco, tambien en español, bajo la regla has derived form
+
+Ti@
+-
+Se considera que tacon del idioma español es tio de ataca, tambien en español, bajo la regla has derived form
+
+Prim@s
+-
+Se considera que tacones del idioma español es primo de atacada, tambien en español, bajo la regla has derived form, pero en este caso es primo en grado 1,2,3,4 a la ves, ya que hay muchos caminos que determinan que son primos.
+
 Distribución del Trabajo
 ===
 | Tarea| Fabio| Sergio| Gabriel| 
