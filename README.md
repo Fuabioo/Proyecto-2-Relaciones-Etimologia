@@ -253,7 +253,7 @@ Todas las relaciones presentes el la base de datos junto con las interpretacione
 
 Para la formulación de consultas, se maneja internamente de manera que se estandariza la naturaleza padre-hijo/hijo-padre para realizar consultas consistentes.
 
-![Diagrama 2](https://github.com/Fuabioo/Proyecto-2-Relaciones-etimología/blob/master/addons/Diagram_2.png "Diagrama 2")  
+![Diagrama 2](https://github.com/Fuabioo/Proyecto-2-Relaciones-Etimologia/blob/master/addons/Diagram_2.png "Diagrama 2")  
 
 En este diagrama se detallan las definiciones de relaciones familiares que se utilizaron el proyecto. Por lo tanto todo lo programado en este, está basado en estas.
 
