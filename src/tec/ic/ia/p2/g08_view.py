@@ -19,6 +19,7 @@ class View(object):
         self.current_action = "word_word"
         self.scaling = scaling
         self.root.tk.call('tk', 'scaling', self.scaling)
+        self.root.tk.call('encoding', 'system', 'utf-8')
         self.main_panel = None
         self.create_base()
 

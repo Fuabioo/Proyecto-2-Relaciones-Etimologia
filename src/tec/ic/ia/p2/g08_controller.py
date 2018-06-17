@@ -60,15 +60,15 @@ class Controller(object):
         self.view.console_panel.print(
             "Loaded", len(data), "logic models")
         # Execute query
-        # try:
-        outputs = self.querys[self.view.current_action](
-            deepcopy(inputs),
-            deepcopy(relations),
-            self.view.console_panel,
-            self.model.get_logic())
-        # except BaseException as exeption:
-        #     outputs = {"error": "Unable to process"}
-        #     self.view.console_panel.print(exeption)
+        try:
+            outputs = self.querys[self.view.current_action](
+                deepcopy(inputs),
+                deepcopy(relations),
+                self.view.console_panel,
+                self.model.get_logic())
+        except BaseException as exeption:
+            outputs = {"error": "Unable to process"}
+            self.view.console_panel.print(exeption)
         # Display outputs
         self.view.main_panel.set_inputs(outputs)
         self.view.console_panel.print("Done.")
