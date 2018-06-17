@@ -298,6 +298,11 @@ Prim@s
 -
 Se considera que tacones del idioma español es primo de atacada, tambien en español, bajo la regla has derived form, pero en este caso es primo en grado 1,2,3,4 a la ves, ya que hay muchos caminos que determinan que son primos.
 
+Palabra está relacionada con un idioma
+-
+La palabra taylor en ingles es padre de la palabra  テイラー, que significa lo mismo y se pronuncia Teirā
+
+
 Distribución del Trabajo
 ===
 | Tarea| Fabio| Sergio| Gabriel| 
