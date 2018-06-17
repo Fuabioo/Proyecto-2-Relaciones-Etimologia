@@ -18,6 +18,11 @@ def split_files(filename="etymwn.tsv"):
                 word_2_lang = columns[2].split(':')[0]
                 word_2 = '"' + columns[2].split(':')[1].replace("\n", "").replace('"', "'").replace(' ','') + '"'
 
+                if language_tag == "del":
+                    language_tag = "delaware"
+                if word_2_lang == "del":
+                    word_2_lang = "delaware"
+
                 if relation not in relations:
                     relations[relation] = 0
                 relations[relation] = relations[relation] + 1
