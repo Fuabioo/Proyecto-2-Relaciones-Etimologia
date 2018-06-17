@@ -144,6 +144,13 @@ class ConsolePanel():
         for arg in args:
             string += str(arg) + ' '
         string = string[:-1] + '\n'
+        # string = bytes(string, 'utf-8').decode('utf-8', 'ignore')
+        # string=string.decode('utf-8','ignore').encode("utf-8")
+        # string = string.rstrip().encode('utf-8','ignore')
+        char_list = [string[j] for j in range(len(string)) if ord(string[j]) in range(65536)]
+        string=''
+        for j in char_list:
+            string=string+j
         self.console.nametowidget("console").insert(tkinter.END, string)
         self.console.nametowidget("console").see(tkinter.END)
         return True
