@@ -32,10 +32,13 @@ class Model(pyDatalog.Mixin):
     def load(self, console):
         """Loads the clauses from the file"""
         start = time.time()
-        pyDatalog.load(self.data)
-        if console:
-            console.print(self.included_files,
-                      "Finished ", time.time() - start, " s")
+        try:
+            pyDatalog.load(self.data)
+            if console:
+                console.print(self.included_files,
+                              "Finished ", time.time() - start, " s")
+        except BaseException as exception:
+            print(exception)
 
     def append_data(self, data, file=""):
         """Appends clauses to the current clause
